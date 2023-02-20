@@ -2,9 +2,8 @@ import sys
 
 import requests
 
-print(sys.version)
-print(sys.executable)
 
-r = requests.get("https://www.contenttree.my")
+
+r = requests.get("http://www.contenttree.my")
 print(r.status_code)
-
+print(r.ok)
